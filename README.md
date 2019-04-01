@@ -2,6 +2,7 @@
 
 A minimalistic advertisement algorithm powered by Sentiment Analysis 
 
+![AdOpinion : retrieve the list of users to target by brand](doc/Intro_AdOpinion.gif)
 ## Installation 
 
 * First, install [node](https://nodejs.org/en/)
