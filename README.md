@@ -3,6 +3,14 @@
 A minimalistic advertisement algorithm powered by Sentiment Analysis 
 
 ![AdOpinion : retrieve the list of users to target by brand](doc/Intro_AdOpinion.gif)
+
+## What it does
+
+It call the Twitter API and fetch the 300 last tweets concerning the brand entered in the search bar (the number of tweets can be modified). Then it analyses these tweets and classify them into 'positive' or 'negative' ones using a trained model (`best_model.hdf5`) based on a bidirectionnal LSTM network.
+Finally, it outputs the list of the 'positive users' and the 'negative users' : the 'positive users' are those who 'likes' the brand so a marketing service of this brand may be interested in sending product advertisements to them because they know that they will buy it. On the other side, the 'negative users' will be more excited to watch the 'moral value video' of the brand because those are potential users...
+
+Thus, it target users based on their sentiment and not according some cookies statistics.
+
 ## Installation 
 
 * First, install [node](https://nodejs.org/en/)
