@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+    <title>Twit-sieve</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/echart.min.css'/>
+  </head>
+  <body>
+
+      <h1>"<%=titre%>"</h1>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <form id="mainForm" action="/model?task=download&status=positive" method="get" onkeypress="pressEnter(event);">
+        <button type="button" onclick="location.href='/model?task=download&status=positive';" style="left: 10%; top: 20%; position: absolute;">Positive targets</button>
+        
+      
+    </form>
+    <form id="mainForm" action="/model?task=download&status=negative" method="get" onkeypress="pressEnter(event);">
+      <button type="button" onclick="location.href='/model?task=download&status=negative';" style="right: 10%; top: 20%; position: absolute;">Negative targets</button>    
+    </form>
+      
+
+      
+      
+    
+  <script src="/javascripts/main.js"></script>
+
+    
+  </body>
+</html>
