@@ -6,10 +6,10 @@ var util = require("util");
 let {PythonShell} = require('python-shell')
 
 var client = new Twitter({
-  consumer_key: 'BwjInHVoadpiaU6JHfVH64T96',
-  consumer_secret: 'qLUnXeVbooXnlFB0DMzjsEF4FNUrZm0k0aMOO2XjRu4NTom4N9',
-  access_token_key: '901077254100398080-4S2qXo0gvcjg4JdL5tEobndyKH6Mpzt',
-  access_token_secret: 'Rwzt3ekqVhmuUDtjBjXR7YfYqE0HuAVvgEu6GlQBKQoBf'
+  consumer_key: '',
+  consumer_secret: '',
+  access_token_key: '',
+  access_token_secret: ''
 });
 
 var params = {screen_name: 'nodejs'};
