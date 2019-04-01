@@ -13,6 +13,8 @@ Thus, it target users based on their sentiment and not according some cookies st
 
 ## Installation 
 
+* Register in https://developer.twitter.com/ then create an application in the developer console and generate the API keys :
+`consumer_key`, `consumer_secret`, `access_token_key` and `access_token_secret`.
 * First, install [node](https://nodejs.org/en/)
 * Then, enter in the terminal : `git clone https://github.com/gabrielmougard/AdOpinion.git && cd AdOpinion && npm install`
 * Run `pip3 install -r requirement.txt` to install python3 dependencies.
