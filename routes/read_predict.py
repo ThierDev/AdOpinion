@@ -19,12 +19,11 @@ import pandas as pd
 import pickle
 import re
 import sys
+import os
 
+cwd = os.getcwd()
 
-
-#direct=str(sys.argv[1])
-
-f = open("/home/thierry/Documents/data_science/routes/input.json")
+f = open(cwd+"/routes/input.json")
 
 data = json.load(f) 
 
@@ -80,7 +79,7 @@ def build_model(output_emb = 32, lstm_out_dim = 128, dense_size = 64):
 
 
 
-Dictionnary = np.loadtxt("/home/thierry/Documents/data_science/routes/Dict.txt", dtype='str')
+Dictionnary = np.loadtxt(cwd+"/routes/Dict.txt", dtype='str')
 
 def Tokenisation(text): 
     '''sentence = "The Quick brown fox, Jumps over the lazy little dog. Hello World. Good thing"'''
@@ -132,7 +131,7 @@ model = build_model()
 model.summary()
 
 
-model.load_weights("/home/thierry/Documents/data_science/routes/model_best.hdf5")
+model.load_weights(cwd+"/routes/model_best.hdf5")
 
 Total = []
 for i in range(0,len(model_input)):
@@ -147,6 +146,6 @@ label_predict=model.predict_classes(model_input)
 df['label']=label_predict
 
 df[["text","label"]]
-df.to_csv("/home/thierry/Documents/data_science/routes/output.csv",sep=",")
+df.to_csv(cwd+"/routes/output.csv",sep=",")
 
 sys.stdout.flush()
