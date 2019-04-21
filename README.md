@@ -4,6 +4,9 @@ A minimalistic advertisement algorithm powered by Sentiment Analysis
 
 ![AdOpinion : retrieve the list of users to target by brand](doc/Intro_AdOpinion.gif)
 
+The app schema/topology 
+![AdOpinion : Schema](doc/GlobalArchitecture.png)
+
 ## What it does
 
 It call the Twitter API and fetch the 300 last tweets concerning the brand entered in the search bar (the number of tweets can be modified). Then it analyses these tweets and classify them into 'positive' or 'negative' ones using a trained model (`best_model.hdf5`) based on a bidirectionnal LSTM network.
